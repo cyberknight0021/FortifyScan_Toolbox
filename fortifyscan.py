@@ -56,11 +56,16 @@ def declaration():
 def read_xss_payloads():
     payloads = []
     try:
-        with open('/home/ubuntu/Desktop/Github-My-Repo/FortifyScan_Toolbox/modules/password/xss_payload_list.txt', 'r') as file:
+        # Get the file path from the user
+        file_path = input("Enter the path to the XSS payload file: ")
+
+        with open(file_path, 'r') as file:
             payloads = file.readlines()
     except Exception as e:
         print(red + '[!]' + ' Error reading payloads: ' + str(e) + default)
     return payloads
+
+
 
 def advanced_XXS_attack():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -257,6 +262,3 @@ def Main_Menu_Options():
 
 # Call the Main_Menu function
 Main_Menu_Options()
-
-
-
