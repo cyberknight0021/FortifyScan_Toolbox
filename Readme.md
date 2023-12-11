@@ -40,7 +40,7 @@ pip3 install -r requirements.txt
 python3 fortifyscan.py
 ~~~
 
-![Start-Image](/home/ubuntu/Desktop/Github-My-Repo/FortifyScan_Toolbox/modules/password/main.png )
+![Start-Image](https://github.com/cyberknight0021/FortifyScan_Toolbox/blob/master/modules/password/main.png)
 
 ## Contributing
 
